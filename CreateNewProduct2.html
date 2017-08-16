@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<link
+    href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+    rel="stylesheet" type="text/css" />
+<link
+    href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.css"
+    rel="stylesheet" type="text/css" />
+
+<link
+    href="//kendo.cdn.telerik.com/2017.2.621/styles/kendo.common.min.css"
+    rel="stylesheet" />
+<link
+    href="//kendo.cdn.telerik.com/2017.2.621/styles/kendo.bootstrap.min.css"
+    rel="stylesheet" />
+<link href="//protostrap.com/Assets/gv/css/gv.bootstrap-form.css"
+    rel="stylesheet" type="text/css" />
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!-- Fav and touch icons -->
+    
+</head>
+
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+
+            <form action="../submit" id="formentry" class="form-horizontal" role="form" data-parsley-validate novalidate>
+                <div class="container-fluid shadow">
+                    <div class="row">
+                        <div id="valErr" class="row viewerror clearfix hidden">
+                            <div class="alert alert-danger">Oops! Seems there are some errors..</div>
+                        </div>
+                        <div id="valOk" class="row viewerror clearfix hidden">
+                            <div class="alert alert-success">Yay! ..</div>
+                        </div>
+
+                        
+                                    <div class="row">
+                                        <div class="col-md-12"><div class="panel-group" id="accordion2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#accBody4" id="accHeading4" class="">Manufacturer &amp; Catalog</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse in" id="accBody4" style="height: auto;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-12"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field131">Manufacturer<span class="req"> *</span></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field131" class="form-control" data-role="select" required="required" data-parsley-errors-container="#errId1">
+		  <option value=""></option>
+		  <option value="Option 1">MOON</option>
+		  <option value="Option 2">ANDERSSEN</option>
+		  <option value="Option 3">BOROVICHI-MEBEL</option>
+		  <option value="Option 4">PINSKDREV</option>
+		</select><span id="errId1" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field132">Main rubric in catalog<span class="req"> *</span></label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field132" class="form-control" data-role="select" required="required" data-parsley-errors-container="#errId2">
+		  <option value=""></option>
+		  <option value="Option 1">Residental furniture</option>
+		  <option value="Option 2">-- Sofas direct</option>
+		  <option value="Option 3">-- Corner sofas</option>
+		  <option value="Option 4">-- Armchairs</option>
+		</select><span id="errId2" class="error"></span></div>
+                
+		</div></div></div></div>
+                        </div>
+                    </div>
+
+
+                </div><div class="row"><div class="col-md-4"><div class="panel-group" id="accordion33">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion33" href="#accBody35" id="accHeading35">Pictures</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse in" id="accBody35" style="height: auto;">
+                            <div class="panel-body">
+                                
+                            <div class="form-group">
+			    
+			    
+                
+		<button id="button38" type="button" class="btn btn-default">Upload image</button></div><div class="form-group">
+			    
+			    
+                
+		<button id="button40" type="button" class="btn btn-default">Upload image</button></div><div class="form-group">
+			    
+			    
+                
+		<button id="button42" type="button" class="btn btn-default">Upload image</button></div><div class="form-group">
+			    
+			    
+                
+		<button id="button44" type="button" class="btn btn-default">Upload 3D model</button></div></div>
+                        </div>
+                    </div>
+
+
+                </div></div><div class="col-md-4"><div class="panel-group" id="accordion53">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion53" href="#accBody55" id="accHeading55" class="">Translations</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse in" id="accBody55" style="height: auto;">
+                            <div class="panel-body">
+                                
+                            <div class="row" id="tab57" data-role="tab">
+				<ul class="nav nav-tabs">
+					  <li class="active"><a href="#tabContent58" data-toggle="tab" id="tabLabel58">Russian</a></li>
+					  <li class=""><a data-toggle="tab" href="#tabContent59" id="tabLabel59">English</a></li>
+					  <li class=""><a href="#tabContent60" data-toggle="tab" id="tabLabel60">Chinese</a></li><li class=""><a id="tabLabel61" href="#tabContent61" data-toggle="tab">German</a></li>
+				</ul>
+				<div class="tab-content">
+				  <div class="tab-pane active" id="tabContent58"><div class=""><div class="form-group">
+			    <label class="control-label" for="field62">Product name<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <input id="field62" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId3"><span id="errId3" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field63">Description</label>
+			    <div class="controls">
+                    
+                <textarea id="field63" rows="3" class="form-control k-textbox" data-role="textarea" style="margin-top: 0px; margin-bottom: 0px; height: 87px;" data-parsley-errors-container="#errId4"></textarea><span id="errId4" class="error"></span></div>
+                
+		</div></div></div>
+				  <div class="tab-pane" id="tabContent59"><div class=""></div></div>
+				  <div class="tab-pane" id="tabContent60"><div class=""></div></div><div class="tab-pane" id="tabContent61"><div class=""></div></div>
+				</div>
+		</div></div>
+                        </div>
+                    </div>
+
+
+                </div></div><div class="col-md-4"><div class="panel-group" id="accordion64" style="display: block;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion64" href="#accBody66" id="accHeading66">Misc</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse in" id="accBody66" style="height: auto;">
+                            <div class="panel-body">
+                                
+                            <div class="form-group">
+			    <label class="control-label-left" for="field68">SKU by manufacturer</label>
+			    <div class="controls">
+                    
+                <input id="field68" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId5"><span id="errId5" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field69">Additional rubric  to display the item</label>
+			    <div class="controls">
+                    
+                <select id="field69" class="form-control" data-role="select" data-parsley-errors-container="#errId6">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId6" class="error"></span></div>
+                
+		</div><div class="row"><div class="col-md-6"><div class="form-group">
+			    <label class="control-label" for="field316">Main price</label>
+			    <div class="controls">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId7"><input id="field316" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield316" style="display: none;" data-default="956.85" data-parsley-errors-container="#errId7"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId7" class="error"></span></div>
+                
+		</div></div><div class="col-md-6"><div class="form-group">
+			    <label class="control-label" for="field76">Currency</label>
+			    <div class="controls">
+                    
+                <select id="field76" class="form-control" data-role="select" selected="selected" data-parsley-errors-container="#errId8">
+		  
+		  
+		  
+		  
+		  
+		<option value=""></option><option value="Russian rouble">Russian rouble</option><option value="US Dollar">US Dollar</option><option value="Euro">Euro</option></select><span id="errId8" class="error"></span></div>
+                
+		</div></div></div></div>
+                        </div>
+                    </div>
+
+
+                </div></div></div><div class="panel-group" id="accordion99">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion99" href="#accBody101" id="accHeading101" class="collapsed">Style</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody101" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-12"><div class="form-group">
+			    <label class="sr-only control-label"></label>
+			    <div class="controls">
+                    
+                <label class="checkbox col-md-3" for="checkbox145"><input type="checkbox" value="Classic Moderne (American)" id="checkbox145" name="field144" data-parsley-errors-container="#errId9">Classic Moderne (American)</label><label class="checkbox col-md-3" for="checkbox146"><input type="checkbox" value="Minimalism" id="checkbox146" name="field144" data-parsley-errors-container="#errId9">Minimalism</label><label class="checkbox col-md-3"><input id="checkbox175" name="field144" type="checkbox" value="Eclecticism" data-parsley-errors-container="#errId9">Eclecticism</label><label class="checkbox col-md-3"><input id="checkbox177" name="field144" type="checkbox" value="Industrial" data-parsley-errors-container="#errId9">Industrial</label><label class="checkbox col-md-3 field-layout-reset"><input id="checkbox171" name="field144" type="checkbox" value="Japanese (Oriental)" data-parsley-errors-container="#errId9">Japanese (Oriental)</label><label class="checkbox col-md-3"><input id="checkbox169" name="field144" type="checkbox" value="Provence" data-parsley-errors-container="#errId9">Provence</label><label class="checkbox col-md-3"><input id="checkbox167" name="field144" type="checkbox" value="Bohho chic" data-parsley-errors-container="#errId9">Bohho chic</label><label class="checkbox col-md-3"><input id="checkbox165" name="field144" type="checkbox" value="Loft" data-parsley-errors-container="#errId9">Loft</label><label class="checkbox col-md-3 field-layout-reset"><input id="checkbox163" name="field144" type="checkbox" value="Modern" data-parsley-errors-container="#errId9">Modern</label><label class="checkbox col-md-3"><input id="checkbox161" name="field144" type="checkbox" value="High tech" data-parsley-errors-container="#errId9">High tech</label><label class="checkbox col-md-3"><input id="checkbox159" name="field144" type="checkbox" value="English" data-parsley-errors-container="#errId9">English</label><label class="checkbox col-md-3"><input id="checkbox157" name="field144" type="checkbox" value="Art Deco" data-parsley-errors-container="#errId9">Art Deco</label><label class="checkbox col-md-3 field-layout-reset"><input id="checkbox155" name="field144" type="checkbox" value="Rustico" data-parsley-errors-container="#errId9">Rustico</label><label class="checkbox col-md-3"><input id="checkbox189" name="field144" type="checkbox" value="Classical" data-parsley-errors-container="#errId9">Classical</label><label class="checkbox col-md-3"><input id="checkbox187" name="field144" type="checkbox" value="Shabba chic" data-parsley-errors-container="#errId9">Shabba chic</label><label class="checkbox col-md-3"><input id="checkbox185" name="field144" type="checkbox" value="Scandinavian" data-parsley-errors-container="#errId9">Scandinavian</label><label class="checkbox col-md-3 field-layout-reset"><input id="checkbox183" name="field144" type="checkbox" value="Vintage" data-parsley-errors-container="#errId9">Vintage</label><label class="checkbox col-md-3"><input id="checkbox181" name="field144" type="checkbox" value="Ethnic" data-parsley-errors-container="#errId9">Ethnic</label><label class="checkbox col-md-3"><input id="checkbox179" name="field144" type="checkbox" value="Country" data-parsley-errors-container="#errId9">Country</label><span id="errId9" class="error"></span></div>
+                
+		</div></div></div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion99" href="#accBody115" id="accHeading115" class="collapsed">Quality properties<div class="accordion-toolbar"></div></a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody115" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3">Popularity<span class="req"> *</span></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio230"><input type="radio" value="Option 1" id="radio230" name="field229" required="required" data-parsley-errors-container="#errId10">New</label><label class="radio" for="radio231"><input type="radio" value="Option 2" id="radio231" name="field229" required="required" data-parsley-errors-container="#errId10">No sales</label><label class="radio" for="radio232"><input type="radio" value="Option 3" id="radio232" name="field229" required="required" data-parsley-errors-container="#errId10">Single sales</label><label class="radio"><input id="radio245" name="field229" type="radio" data-parsley-errors-container="#errId10">Often sold</label><label class="radio"><input id="radio244" name="field229" type="radio" data-parsley-errors-container="#errId10">Increased demand</label><label class="radio"><input id="radio243" name="field229" type="radio" data-parsley-errors-container="#errId10">Bestseller</label><span id="errId10" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Quality<span class="req"> *</span></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio235"><input type="radio" value="Option 1" id="radio235" name="field234" required="required" data-parsley-errors-container="#errId11">Econom</label><label class="radio" for="radio236"><input type="radio" value="Option 2" id="radio236" name="field234" required="required" data-parsley-errors-container="#errId11">Middle</label><label class="radio" for="radio237"><input type="radio" value="Option 3" id="radio237" name="field234" required="required" data-parsley-errors-container="#errId11">Good</label><label class="radio"><input id="radio247" name="field234" type="radio" data-parsley-errors-container="#errId11">High</label><label class="radio"><input id="radio246" name="field234" type="radio" data-parsley-errors-container="#errId11">Exclussive</label><span id="errId11" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Production time<span class="req"> *</span></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio240"><input type="radio" value="Option 1" id="radio240" name="field239" required="required" data-parsley-errors-container="#errId12">Shipping from stock (Finished goods)</label><label class="radio" for="radio241"><input type="radio" value="Option 2" id="radio241" name="field239" required="required" data-parsley-errors-container="#errId12">Fast production time (up to 5 working days)</label><label class="radio" for="radio242"><input type="radio" value="Option 3" id="radio242" name="field239" required="required" data-parsley-errors-container="#errId12">Average production time (up to 3 weeks)</label><label class="radio"><input id="radio249" name="field239" type="radio" required="required" data-parsley-errors-container="#errId12">Long term of manufacturing (up to 2 months)</label><label class="radio"><input id="radio248" name="field239" type="radio" required="required" data-parsley-errors-container="#errId12">Individual orders (over 2 months)</label><span id="errId12" class="error"></span></div>
+                
+		</div></div></div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion99" href="#accBody110" id="accHeading110" class="collapsed">Dimensions</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody110" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-12"><div class="panel-group" id="accordion250">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion250" href="#accBody252" id="accHeading252" class="collapsed">Main</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody252" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field258">Length (mm)</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId13"><input id="field258" value="" type="text" class="form-control k-input" data-role="numeric" data-format="integer" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield258" style="display: none;" data-parsley-errors-container="#errId13"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId13" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field259">Width (mm)</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId14"><input id="field259" value="" type="text" class="form-control k-input" data-role="numeric" data-format="integer" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield259" style="display: none;" data-parsley-errors-container="#errId14"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId14" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field260">Height (mm)</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId15"><input id="field260" value="" type="text" class="form-control k-input" data-role="numeric" data-format="integer" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield260" style="display: none;" data-parsley-errors-container="#errId15"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId15" class="error"></span></div>
+                
+		</div></div></div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion250" href="#accBody254" id="accHeading254" class="">Sleeping area</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse in" id="accBody254" style="height: auto;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-6"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field261">Length (mm)</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId16"><input id="field261" value="" type="text" class="form-control k-input" data-role="numeric" data-format="integer" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield261" style="display: none;" data-parsley-errors-container="#errId16"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId16" class="error"></span></div>
+                
+		</div></div><div class="col-md-6"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field262">Width(mm)</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId17"><input id="field262" value="" type="text" class="form-control k-input" data-role="numeric" data-format="integer" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield262" style="display: none;" data-parsley-errors-container="#errId17"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId17" class="error"></span></div>
+                
+		</div></div></div></div>
+                        </div>
+                    </div>
+
+
+                </div></div></div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion99" href="#accBody106" id="accHeading106" class="collapsed">Materials</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody106" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-12"><div class="panel-group" id="accordion263">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion263" href="#accBody265" id="accHeading265" class="collapsed">Upholstery upholstery material</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody265" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-12"><div class="row"><div class="col-md-4"><div class="form-group">
+			    
+			    
+                
+		<ul id="pill340" class="nav nav-pills nav-stacked">
+        <li id="pill341"><a>Category 1</a></li>
+        <li id="pill342"><a>Category 2</a></li>
+        <li id="pill343"><a>Category 3</a></li> <li id="pill349"><a>Category 4</a></li>  <li id="pill348"><a>Category 5</a></li>  <li id="pill347"><a>Category 6</a></li> 
+    </ul></div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field315">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId18"><input id="field315" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield315" style="display: none;" data-default="1450.12" data-parsley-errors-container="#errId18"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId18" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field324">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId19"><input id="field324" value="" type="text" class="form-control k-input" data-role="numeric" data-format="integer" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield324" style="display: none;" data-parsley-errors-container="#errId19"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId19" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field326">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId20"><input id="field326" value="" type="text" class="form-control k-input" data-role="numeric" data-format="integer" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield326" style="display: none;" data-parsley-errors-container="#errId20"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId20" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field330">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId21"><input id="field330" value="" type="text" class="form-control k-input" data-role="numeric" data-format="integer" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield330" style="display: none;" data-parsley-errors-container="#errId21"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId21" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field329">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId22"><input id="field329" value="" type="text" class="form-control k-input" data-role="numeric" data-format="integer" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield329" style="display: none;" data-parsley-errors-container="#errId22"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId22" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field328">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId23"><input id="field328" value="" type="text" class="form-control k-input" data-role="numeric" data-format="integer" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield328" style="display: none;" data-parsley-errors-container="#errId23"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId23" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field290">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field290" class="form-control" data-role="select" data-parsley-errors-container="#errId24">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId24" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field325">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field325" class="form-control" data-role="select" data-parsley-errors-container="#errId25">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId25" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field327">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field327" class="form-control" data-role="select" data-parsley-errors-container="#errId26">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId26" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field331">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field331" class="form-control" data-role="select" data-parsley-errors-container="#errId27">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId27" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field332">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field332" class="form-control" data-role="select" data-parsley-errors-container="#errId28">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId28" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field333">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field333" class="form-control" data-role="select" data-parsley-errors-container="#errId29">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId29" class="error"></span></div>
+                
+		</div></div></div></div></div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion263" href="#accBody274" id="accHeading274" class="collapsed">Material for the manufacture of a frame of upholstered furniture</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody274" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio386" style="
+"><input type="radio" value="Option 1" id="radio386" name="field385" data-parsley-errors-container="#errId30">Solid wood</label><span id="errId30" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field389">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: block;" data-parsley-errors-container="#errId31"><input id="field389" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield389" style="display: none;" data-parsley-errors-container="#errId31"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId31" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field396">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field396" class="form-control" data-role="select" data-parsley-errors-container="#errId32">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId32" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio499"><input type="radio" value="Option 1" id="radio499" name="field498" data-parsley-errors-container="#errId33">Metal</label><span id="errId33" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field391">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId34"><input id="field391" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield391" style="display: none;" data-parsley-errors-container="#errId34"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId34" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field398">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field398" class="form-control" data-role="select" data-parsley-errors-container="#errId35">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId35" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio509"><input type="radio" value="Option 1" id="radio509" name="field508" data-parsley-errors-container="#errId36">MDF</label><span id="errId36" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field393">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId37"><input id="field393" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield393" style="display: none;" data-parsley-errors-container="#errId37"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId37" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field400">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field400" class="form-control" data-role="select" data-parsley-errors-container="#errId38">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId38" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio514"><input type="radio" value="Option 1" id="radio514" name="field513" data-parsley-errors-container="#errId39">Chipboard</label><span id="errId39" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field392">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId40"><input id="field392" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield392" style="display: none;" data-parsley-errors-container="#errId40"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId40" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field399">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field399" class="form-control" data-role="select" data-parsley-errors-container="#errId41">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId41" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio519"><input type="radio" value="Option 1" id="radio519" name="field518" data-parsley-errors-container="#errId42">Plywood</label><span id="errId42" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field390">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control k-input" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="" data-parsley-errors-container="#errId43"><input id="field390" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield390" style="display: none;" data-parsley-errors-container="#errId43"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId43" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field397">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field397" class="form-control" data-role="select" data-parsley-errors-container="#errId44">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId44" class="error"></span></div>
+                
+		</div></div></div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion263" href="#accBody270" id="accHeading270" class="collapsed">Filler for upholstered furniture</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody270" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox" for="checkbox428"><input type="checkbox" value="PPU" id="checkbox428" name="field427" data-parsley-errors-container="#errId45">PPU</label><span id="errId45" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field434">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId46"><input id="field434" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield434" style="display: none;" data-parsley-errors-container="#errId46"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId46" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field436">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field436" class="form-control" data-role="select" data-parsley-errors-container="#errId47">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId47" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3 sr-only"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox" for="checkbox486"><input type="checkbox" value="Spring block" id="checkbox486" name="field485" data-parsley-errors-container="#errId48">Spring block</label><span id="errId48" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field435">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId49"><input id="field435" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield435" style="display: none;" data-parsley-errors-container="#errId49"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId49" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field437">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field437" class="form-control" data-role="select" data-parsley-errors-container="#errId50">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId50" class="error"></span></div>
+                
+		</div></div></div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion263" href="#accBody267" id="accHeading267" class="collapsed">Armrest, material</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody267" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox" for="checkbox450"><input type="checkbox" value="Rigid, wooden" id="checkbox450" name="field449" data-parsley-errors-container="#errId51">Rigid, wooden</label><span id="errId51" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field458">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId52"><input id="field458" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield458" style="display: none;" data-parsley-errors-container="#errId52"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId52" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field460">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field460" class="form-control" data-role="select" data-parsley-errors-container="#errId53">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId53" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3 sr-only"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox" for="checkbox476"><input type="checkbox" value="Soft, upholstery material" id="checkbox476" name="field475" data-parsley-errors-container="#errId54">Soft, upholstery material</label><span id="errId54" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field459">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId55"><input id="field459" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield459" style="display: none;" data-parsley-errors-container="#errId55"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId55" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field461">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field461" class="form-control" data-role="select" data-parsley-errors-container="#errId56">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId56" class="error"></span></div>
+                
+		</div></div></div></div>
+                        </div>
+                    </div>
+
+
+                </div></div></div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion99" href="#accBody103" id="accHeading103" class="">Other properties</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse in" id="accBody103" style="height: auto;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-12"><div class="panel-group" id="accordion522">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion522" href="#accBody524" id="accHeading524" class="collapsed">Presence of a box for linen</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody524" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio col-md-3" for="radio556"><input type="radio" value="Option 1" id="radio556" name="field555" data-parsley-errors-container="#errId57">Yes</label><label class="radio col-md-3" for="radio557"><input type="radio" value="Option 2" id="radio557" name="field555" data-parsley-errors-container="#errId57">No</label><span id="errId57" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field559">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId58"><input id="field559" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield559" style="display: none;" data-parsley-errors-container="#errId58"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId58" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field560">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field560" class="form-control" data-role="select" data-parsley-errors-container="#errId59">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId59" class="error"></span></div>
+                
+		</div></div></div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion522" href="#accBody538" id="accHeading538" class="collapsed">Presence of drawer</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody538" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio col-md-3" for="radio568"><input type="radio" value="Option 1" id="radio568" name="field567" data-parsley-errors-container="#errId60">Yes</label><label class="radio col-md-3" for="radio569"><input type="radio" value="Option 2" id="radio569" name="field567" data-parsley-errors-container="#errId60">No</label><span id="errId60" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field571">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId61"><input id="field571" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield571" style="display: none;" data-parsley-errors-container="#errId61"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId61" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field572">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field572" class="form-control" data-role="select" data-parsley-errors-container="#errId62">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId62" class="error"></span></div>
+                
+		</div></div></div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion522" href="#accBody533" id="accHeading533" class="collapsed">Folding mechanism of the sofa</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody533" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio626"><input type="radio" value="Option 1" id="radio626" name="field625" data-parsley-errors-container="#errId63">Book</label><span id="errId63" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field679">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId64"><input id="field679" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield679" style="display: none;" data-parsley-errors-container="#errId64"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId64" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field680">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field680" class="form-control" data-role="select" data-parsley-errors-container="#errId65">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId65" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio631"><input type="radio" value="Option 1" id="radio631" name="field630" data-parsley-errors-container="#errId66">Concorde</label><span id="errId66" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field681">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId67"><input id="field681" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield681" style="display: none;" data-parsley-errors-container="#errId67"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId67" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field682">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field682" class="form-control" data-role="select" data-parsley-errors-container="#errId68">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId68" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio636"><input type="radio" value="Option 1" id="radio636" name="field635" data-parsley-errors-container="#errId69">American clamshell</label><span id="errId69" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field683">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId70"><input id="field683" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield683" style="display: none;" data-parsley-errors-container="#errId70"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId70" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field684">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field684" class="form-control" data-role="select" data-parsley-errors-container="#errId71">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId71" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio641"><input type="radio" value="Option 1" id="radio641" name="field640" data-parsley-errors-container="#errId72">Dolphin</label><span id="errId72" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field685">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId73"><input id="field685" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield685" style="display: none;" data-parsley-errors-container="#errId73"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId73" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field686">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field686" class="form-control" data-role="select" data-parsley-errors-container="#errId74">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId74" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio646"><input type="radio" value="Option 1" id="radio646" name="field645" data-parsley-errors-container="#errId75">Accordion</label><span id="errId75" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field687">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId76"><input id="field687" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield687" style="display: none;" data-parsley-errors-container="#errId76"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId76" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field694">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field694" class="form-control" data-role="select" data-parsley-errors-container="#errId77">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId77" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio651"><input type="radio" value="Option 1" id="radio651" name="field650" data-parsley-errors-container="#errId78">Sedaflex</label><span id="errId78" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field688">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId79"><input id="field688" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield688" style="display: none;" data-parsley-errors-container="#errId79"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId79" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field695">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field695" class="form-control" data-role="select" data-parsley-errors-container="#errId80">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId80" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio656"><input type="radio" value="Option 1" id="radio656" name="field655" data-parsley-errors-container="#errId81">Click-clack</label><span id="errId81" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field689">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId82"><input id="field689" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield689" style="display: none;" data-parsley-errors-container="#errId82"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId82" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field696">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field696" class="form-control" data-role="select" data-parsley-errors-container="#errId83">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId83" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio661"><input type="radio" value="Option 1" id="radio661" name="field660" data-parsley-errors-container="#errId84">Retractable</label><span id="errId84" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field690">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId85"><input id="field690" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield690" style="display: none;" data-parsley-errors-container="#errId85"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId85" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field697">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field697" class="form-control" data-role="select" data-parsley-errors-container="#errId86">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId86" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio666"><input type="radio" value="Option 1" id="radio666" name="field665" data-parsley-errors-container="#errId87">Conrad</label><span id="errId87" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field691">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId88"><input id="field691" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield691" style="display: none;" data-parsley-errors-container="#errId88"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId88" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field698">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field698" class="form-control" data-role="select" data-parsley-errors-container="#errId89">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId89" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio671"><input type="radio" value="Option 1" id="radio671" name="field670" data-parsley-errors-container="#errId90">Telescope</label><span id="errId90" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field692">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId91"><input id="field692" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield692" style="display: none;" data-parsley-errors-container="#errId91"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId91" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field699">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field699" class="form-control" data-role="select" data-parsley-errors-container="#errId92">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId92" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio" for="radio676"><input type="radio" value="Option 1" id="radio676" name="field675" data-parsley-errors-container="#errId93">French clamshell</label><span id="errId93" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field693">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId94"><input id="field693" value="" type="text" class="form-control k-input" data-role="numeric" data-format="currency" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield693" style="display: none;" data-parsley-errors-container="#errId94"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId94" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field700">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field700" class="form-control" data-role="select" data-parsley-errors-container="#errId95">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId95" class="error"></span></div>
+                
+		</div></div></div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion522" href="#accBody529" id="accHeading529" class="collapsed">Armrest, availability</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody529" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3 sr-only"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox" for="checkbox580"><input type="checkbox" value="Right" id="checkbox580" name="field579" data-parsley-errors-container="#errId96">Right</label><span id="errId96" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field600">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId97"><input id="field600" value="" type="text" class="form-control k-input" data-role="numeric" data-format="integer" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield600" style="display: none;" data-parsley-errors-container="#errId97"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId97" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field601">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field601" class="form-control" data-role="select" data-parsley-errors-container="#errId98">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId98" class="error"></span></div>
+                
+		</div></div></div><div class="row"><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3 sr-only"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox" for="checkbox594"><input type="checkbox" value="Left" id="checkbox594" name="field593" data-parsley-errors-container="#errId99">Left</label><span id="errId99" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field607">Price</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-numerictextbox form-control" style=""><span class="k-numeric-wrap k-state-default"><input type="text" class="k-formatted-value form-control k-input" tabindex="0" aria-disabled="false" aria-readonly="false" style="display: inline-block;" data-parsley-errors-container="#errId100"><input id="field607" value="" type="text" class="form-control k-input" data-role="numeric" data-format="integer" role="spinbutton" aria-valuenow="" aria-disabled="false" aria-readonly="false" data-error-container="#errfield607" style="display: none;" data-parsley-errors-container="#errId100"><span class="k-select"><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-n" title="Increase value">Increase value</span></span><span unselectable="on" class="k-link"><span unselectable="on" class="k-icon k-i-arrow-s" title="Decrease value">Decrease value</span></span></span></span></span><span id="errId100" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field608">Currency</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="field608" class="form-control" data-role="select" data-parsley-errors-container="#errId101">
+		  <option value=""></option>
+		  <option value="Option 1">Option 1</option>
+		  <option value="Option 2">Option 2</option>
+		  <option value="Option 3">Option 3</option>
+		  <option value="Option 4">Option 4</option>
+		</select><span id="errId101" class="error"></span></div>
+                
+		</div></div></div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion522" href="#accBody526" id="accHeading526" class="collapsed">Type of upholstered furniture</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody526" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="row"><div class="col-md-12"><div class="form-group">
+			    <label class="sr-only control-label control-label-left col-sm-3"></label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="radio col-md-3" for="radio551"><input type="radio" value="Option 1" id="radio551" name="field550" data-parsley-errors-container="#errId102">Sofa</label><label class="radio col-md-3" for="radio552"><input type="radio" value="Option 2" id="radio552" name="field550" data-parsley-errors-container="#errId102">Ottoman</label><label class="radio col-md-3" for="radio553"><input type="radio" value="Option 3" id="radio553" name="field550" data-parsley-errors-container="#errId102">Couch</label><span id="errId102" class="error"></span></div>
+                
+		</div></div></div></div>
+                        </div>
+                    </div>
+
+
+                </div></div></div></div>
+                        </div>
+                    </div>
+
+
+                </div></div>
+                                    </div>
+                                
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="//kendo.cdn.telerik.com/2017.2.621/js/jquery.min.js"></script>
+    <script
+        src="//protostrap.com/Assets/bootstrap/js/bootstrap.min.js"
+        type="text/javascript"></script>
+    <script
+        src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.js"
+        type="text/javascript"></script>
+
+    <script
+        src="//protostrap.com/Assets/inputmask/js/jquery.inputmask.js"
+        type="text/javascript"></script>
+    <script src="//kendo.cdn.telerik.com/2017.2.621/js/kendo.all.min.js"></script>
+    <script src="//protostrap.com/Assets/parsely/parsley.extend.js"
+        type="text/javascript"></script>
+    <script src="//protostrap.com/Assets/parsely/2.0/parsley.js"
+        type="text/javascript"></script>
+    <script src="//protostrap.com/Assets/download.js"
+        type="text/javascript"></script>
+    <script src="//protostrap.com/Assets/protostrap.js"
+        type="text/javascript"></script>
+</body>
+</html>
